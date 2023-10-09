@@ -2,13 +2,11 @@
 const { spawn } = require('child_process');
 const cp = require('child_process');
 
-//1
-//const childProcess = spawn('calc');
-
-// Handle the child process exit event
-// childProcess.on('close', (code) => {
-//   console.log(`Child Process Exited with Code: ${code}`);
-// });
+1
+const childProcess = spawn('calc');
+childProcess.on('close', (code) => {                                                     //Handle the child process exit event
+  console.log(`Child Process Exited with Code: ${code}`);
+});
 
 
 
@@ -23,7 +21,7 @@ const cp = require('child_process');
 // Running an External Script (e.g., a Python script):
 //to test different script in our main.js
 
-// const { spawn } = require('child_process');
+
 
 
 // const childProcess = spawn('python', ['example.py']);        // Create a child process to run a Python script
@@ -48,7 +46,7 @@ const cp = require('child_process');
 // const childProcess = spawn('cmd.exe', ['/c', 'dir']);            // Create a child process to list files in the current directory (Windows)
 
 
-// childProcess.stdout.on('data', (data) => {                       // Listen for data from the child process (standard output)
+// childProcess.stdout.on('data', (data) => {                       //  data from the child process (standard output)
 //   console.log(`Child Process Output:\n${data}`);
 // });
 
@@ -60,7 +58,7 @@ const cp = require('child_process');
 
 
 
-//const childProcess2 = spawn('pwd');
+
 // const { spawn } = require('child_process');
 
 // const childProcesslist = spawn('ls', ['-l']);                  // Create a child process to list files in the current directory
@@ -109,7 +107,7 @@ const { stdout, stderr } = require('process');
 
 
 // Specify the path to the git-bash.exe executable and its arguments
-// const gitBashPath = 'C:\\Program Files\\Git\\git-bash.exe';
+//  const gitBashPath = 'C:\\Program Files\\Git\\git-bash.exe';
 
 // // Execute Git Bash
 // exec(`"${gitBashPath}"`, (error, stdout) => {
@@ -138,16 +136,16 @@ const { stdout, stderr } = require('process');
 //cp.exec('start MicrosoftEdge https://www.youtube.com/watch?v=JjOvDXe8-jQ&ab_channel=Pepcoding')
 
 
-exec('ls  -1h',(error,stdout,stderr) => {
-    if(error) {
-        console.error(`error : ${error.message}`);
-        return
-    }
-    if(stderr) {
-        console.error(`error : ${stderr}`)
-    }
-    console.log(`stdout : ${stdout}`)
-});
+// exec('ls  -1h',(error,stdout,stderr) => {
+//     if(error) {
+//         console.error(`error : ${error.message}`);
+//         return
+//     }
+//     if(stderr) {
+//         console.error(`error : ${stderr}`)
+//     }
+//     console.log(`stdout : ${stdout}`)
+// });
 
 
 
