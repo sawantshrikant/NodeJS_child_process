@@ -16,7 +16,7 @@ childProcess.on('message', (message) => {
 });
 
 
-const numberToSquare = 5;
+const numberToSquare = 7;
 childProcess.send({ numberToSquare });
 
 

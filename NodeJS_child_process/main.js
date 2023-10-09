@@ -2,11 +2,11 @@
 const { spawn } = require('child_process');
 const cp = require('child_process');
 
-1
-const childProcess = spawn('calc');
-childProcess.on('close', (code) => {                                                     //Handle the child process exit event
-  console.log(`Child Process Exited with Code: ${code}`);
-});
+// 1
+// const childProcess = spawn('calc');
+// childProcess.on('close', (code) => {                                                     //Handle the child process exit event
+//   console.log(`Child Process Exited with Code: ${code}`);
+// });
 
 
 
@@ -36,8 +36,8 @@ childProcess.on('close', (code) => {                                            
 //   console.log(`Child Process Exited with Code: ${code}`);              // Handle the child process exit event
 // });
 
-//The spawn method in Node.js is used for creating child processes to run external programs or scripts. 
-//It is a commonly used function in the child_process module for several important reasons
+// The spawn method in Node.js is used for creating child processes to run external programs or scripts. 
+// It is a commonly used function in the child_process module for several important reasons
 
 //4
 // Running an External Command on Windows (e.g., "dir" on Windows):
@@ -109,7 +109,7 @@ const { stdout, stderr } = require('process');
 // Specify the path to the git-bash.exe executable and its arguments
 //  const gitBashPath = 'C:\\Program Files\\Git\\git-bash.exe';
 
-// // Execute Git Bash
+// Execute Git Bash
 // exec(`"${gitBashPath}"`, (error, stdout) => {
 //   if (error) {
 //     console.error(`Error: ${error.message}`);
@@ -133,7 +133,7 @@ const { stdout, stderr } = require('process');
 
 //cp.exec('start MicrosoftEdge')
 
-//cp.exec('start MicrosoftEdge https://www.youtube.com/watch?v=JjOvDXe8-jQ&ab_channel=Pepcoding')
+cp.exec('start MicrosoftEdge https://www.youtube.com/watch?v=JjOvDXe8-jQ&ab_channel=Pepcoding')
 
 
 // exec('ls  -1h',(error,stdout,stderr) => {

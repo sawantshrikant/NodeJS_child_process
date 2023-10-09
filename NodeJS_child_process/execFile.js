@@ -6,13 +6,13 @@ const {execFile} = require ('child_process');
 
 
 
-// // Specify the path to the Python script
-// const scriptPath = 'my_script.py';
+// Specify the path to the Python script
+const scriptPath = 'my_script.py';
 
-// // Specify command-line arguments for the script
-// const scriptArgs = ['input.txt', 'json'];
+// Specify command-line arguments for the script
+const scriptArgs = ['input.txt', 'json'];
 
-// // Execute the Python script with arguments
+// Execute the Python script with arguments
 // execFile('python', [scriptPath, ...scriptArgs], (error, stdout, stderr) => {
 //   if (error) {
 //     console.error(`Error: ${error.message}`);
