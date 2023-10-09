@@ -83,6 +83,8 @@ const cp = require('child_process');
 
 
 const {exec} = require('child_process');
+const { error } = require('console');
+const { stdout, stderr } = require('process');
 
 
 // exec('echo Hello and welcome to Bridgelabz!', (error,stdout,stderr) => {
@@ -128,7 +130,27 @@ const {exec} = require('child_process');
 //       console.log(`Git Bash Output:\n${stdout}`);
 // });
 
-exec('notepad')
+//exec('notepad')
+
+
+//cp.exec('start MicrosoftEdge')
+
+//cp.exec('start MicrosoftEdge https://www.youtube.com/watch?v=JjOvDXe8-jQ&ab_channel=Pepcoding')
+
+
+exec('ls  -1h',(error,stdout,stderr) => {
+    if(error) {
+        console.error(`error : ${error.message}`);
+        return
+    }
+    if(stderr) {
+        console.error(`error : ${stderr}`)
+    }
+    console.log(`stdout : ${stdout}`)
+});
+
+
+
 
 
 
